@@ -1,6 +1,6 @@
-(module SWR25X-NRTC-13-RA-BA (layer F.Cu) (tedit 56489CF2)
+(module SWR25X-NRTC-13-RA-BA (layer F.Cu) (tedit 568962D7)
   (descr "Sullins SWR25X Series Single Row Wafer 2.54 mm Contact Centers, Right Angle")
-  (tags "Sullins 13x01 angled 2.54 mm pitch headers")
+  (tags "Sullins 01x13 angled 2.54 mm pitch headers")
   (fp_text reference REF** (at -2.540 -9.200 270) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )

@@ -55,8 +55,8 @@ def description(number_of_positions, termination_type):
 
 def tags(number_of_positions, termination_type):
 	return "Sullins %02ux%02u %s %.2f mm pitch headers" % (
-		number_of_positions,
 		number_of_rows,
+		number_of_positions,
 		"straight" if termination_type == "ST" else "angled" if termination_type == "RA" else "smd",
 		pin_pitch)
 
@@ -80,7 +80,7 @@ for termination_type in termination_types:
 
 		output = open(filename, 'w')
 
-		output.write("(module %s (layer F.Cu) (tedit 564623B0)\n" % (name(number_of_positions, termination_type)))
+		output.write("(module %s (layer F.Cu) (tedit %X)\n" % (name(number_of_positions, termination_type), int(time.time())))
 
 		# description
 		output.write("  (descr \"%s\")\n" % (description(number_of_positions, termination_type)))

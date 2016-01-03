@@ -55,7 +55,8 @@ def description(number_of_positions, termination_type):
 	return "Sullins SWR25X Series Single Row Wafer 2.54 mm Contact Centers, %s" % ("Straight" if termination_type == "ST" else "Right Angle")
 
 def tags(number_of_positions, termination_type):
-	return "Sullins %02ux01 %s %.2f mm pitch headers" % (
+	return "Sullins %02ux%02u %s %.2f mm pitch headers" % (
+		1,
 		number_of_positions,
 		"straight" if termination_type == "ST" else "angled",
 		pin_pitch)
